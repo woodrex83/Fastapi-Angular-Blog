@@ -1,0 +1,106 @@
+<body class="home blog">
+    <header class="site-header">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-md-3 pull-right">
+          </div> -->
+          <div class="offset-md-2 col-md-3">
+            <span class="site-header__title"><a class="toplogo" routerLink="">SarielBlog</a></span>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+  
+    <div class="site-main">
+        <div class="container main-content">
+        <div class="row">
+            <div class="offset-md-2 col-md-6">
+            <router-outlet></router-outlet>
+            </div><!-- .col-md-8 -->
+            <aside class="offset-md-1 col-xs-12 col-md-3 sidebar">
+            <div class="sidebar__box">
+                <form role="search" method="get" id="searchform" class="searchform" action="https://www.fontblog.de/">
+                    <div class="fontui">
+                        <input type="text" class="searchform__input" value="" name="s" id="s" placeholder="Search..">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </form>
+            </div>
+            
+            <hr>
+            <div class="sidebar__box">
+                <div class="menu-container">
+                    <div class="site-identity"> 
+                        <img 
+                        width="150"
+                        height="150"
+                        src="../../../../assets/img/avatar.jpeg" 
+                        class="custom-logo"
+                        >
+                        <div class="site-title">
+                            <span>woodrex83</span>
+                        </div>
+                        <div class="tagline">
+                            <p>早該結束的東西仍然存活，改寫這個結局</p>
+                        </div>
+                    </div>
+                    <nav aria-label="Social links" class="social-menu-wrapper">
+                        <ul class="social-menu">
+                            <li class="menu-item">
+                                <a href="https://hk.linkedin.com/in/woodrex83"><img class="img-linkedin" src="../../../../assets/img/linkedin.png"></a>
+                                <a href="https://github.com/WoodRex"><img class="img-github" src="../../../../assets/img/github.png"></a>
+                                <a href=""><img class="img-gitee" src="../../../../assets/img/gitee.png"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <hr>
+            <div class="sidebar__box">
+                <h3 class="sidebar__box__title">分類</h3>
+                <ul>
+                    <ng-container *ngFor="let cat of catList">
+                        <li><a [routerLink]="['/category', cat.name]">{{ cat.name }}</a></li>
+                    </ng-container>
+                </ul>
+            </div>
+
+            <hr>
+                <div class="sidebar__box">
+                    <h3 class="sidebar__box__title bold">Document Links</h3>
+                    <div class="menu-sidebar-links-container">
+                        <ul id="menu-sidebar-links" class="menu">
+                            <li>
+                                <a href="https://angular.cn/">→ AngularCN</a>
+                            </li>
+                            <li>
+                                <a href="https://fastapi.tiangolo.com/">→ FastAPI</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.sqlalchemy.org/en/14/">→ SQLAlchemy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>          
+        </div><!-- .row -->
+        </div><!-- .main-container -->
+    </div><!-- /#main -->
+    
+    <footer>
+      <div class="footer">
+        <div class="container">
+            <nav class="info-nav">
+                <ul class="info-nav">
+                    <li>© 2022 SarielBlog</li>
+                </ul>
+            </nav>
+            <br>
+        </div>
+      </div>
+  
+    </footer>
+</body>
+

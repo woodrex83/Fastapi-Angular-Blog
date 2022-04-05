@@ -1,0 +1,127 @@
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.toplogo {
+    color: #fff;
+}
+
+.site-header {
+    line-height: 3em;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(0, 183, 0)
+}
+
+.sidebar__box {
+    font-size: 13px;
+    font-size: .92857rem;
+    line-height: 1.92;
+    margin-top: 0;
+    padding-left: 1.7em;
+    border-left: 3px solid rgb(0, 183, 0);
+    margin-bottom: 0px;
+}
+
+.site-main {
+    margin-top: 2em;
+}
+
+.site-header__title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.searchform__input {
+    line-height: 34px;
+    width: 100%;
+    padding: 0 5px 0 28px;
+}
+
+.searchform__label {
+    line-height: 36px;
+    color: gray;
+    display: block;
+    width: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.fontui {
+    position: relative;
+}
+  
+.fontui i{
+    position: absolute;
+    left: 0.5rem;
+    top: 0.8rem;
+    color: gray;
+}
+
+.footer {
+    background-color: #000;
+    font-size: 12px;
+    padding: 1.5rem 0 0.3rem;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+.img-linkedin,.img-gitee,.img-github {
+    height: 16px;
+}
+
+.custom-logo {
+    border-radius: 50%;
+    margin-left: 15%;
+    margin-bottom: 15px;
+}
+
+.tagline,.site-title {
+    text-align: center;
+}
+
+.social-menu {
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.site-title {
+    font-weight: 500;
+}
+
+.main-content {
+    padding-top: 2.5rem;
+    padding-bottom: 6.5rem;
+}
+
+
+
+// class selector
+img {
+    margin-left: 1rem
+}
+
+hr {
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+
+ul,li {
+    list-style: none;
+    line-height: 1.92;
+    padding-left: 0em!important;
+}
+
+a {
+    text-decoration: none;
+}

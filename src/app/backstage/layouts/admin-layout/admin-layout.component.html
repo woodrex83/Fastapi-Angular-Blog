@@ -1,0 +1,85 @@
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <aside class="col-12 col-md-2 p-0 bg-dark fixed-top sidebar">
+            <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start py-2">
+                <div class="collapse navbar-collapse align-items-start">
+                    <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
+                        <li class="nav-item">
+                            <!-- Brand -->
+                            <a class="navbar-brand pt-0 ml-2" routerLinkActive="active" routerLink="list">
+                            <img src="../../../../assets/img/logo.png" class="navbar-brand-img" alt="...">
+                            </a>
+                        </li>
+
+                        <li *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+                            <a routerLinkActive="active" routerLink="{{menuItem.path}}" class="nav-link pl-0">
+                                <i class="{{menuItem.icon}}" aria-hidden="true"></i>
+                                <span class="d-none d-md-inline ml-3">{{menuItem.title}}</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a
+                            (click)="logout()"   
+                            class="nav-link pointer pl-0">
+                              <i class="fa fa-arrow-left fa-lg ml-2" aria-hidden="true"></i>
+                              <span class="d-none d-md-inline ml-3">登出</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+        <main class="col offset-md-2 bg-faded">
+          <nav class="navbar navbar-expand-lg bg-light nav-border">
+            <div class="container-fluid">
+              
+              <!-- Form -->
+              <div>
+                <span class="avatar-text ml-3">
+                  <!-- 本來想做一個獲取頁面名字的事件發射器，但這個寫法有點糙 -->
+                  <!-- {{ pageName }} -->
+                  <!-- <app-create-post #cp (getName)="receiveName($event)" hidden></app-create-post> -->
+                </span>
+              </div>
+              <!-- User -->
+              <ul class="navbar-nav align-items-center">
+                <div class="media">
+                  <span class="avatar">
+                    <img class="avatar" alt="Image placeholder" src="../../../../assets/img/avatar.jpeg">
+                  </span>
+                </div>
+                <div class="media-body ml-2 d-none d-lg-block">
+                  <span class="avatar-text">{{ userName }}</span>
+                </div>
+              </ul>
+            </div>
+            </nav>
+            <router-outlet></router-outlet>
+            <footer class="footer py-5">
+                <div class="container-fluid">
+                  <div class="row align-items-center justify-content-xl-start">
+                    <div class="col-xl-3">
+                      <div class="copyright text-center">
+                        &copy; 2022 WoodRex
+                      </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                        <li class="nav-item">
+                          <a href="https://suriyel.eth.xyz/" class="nav-link" target="_blank">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="https://suriyel.eth.link/" class="nav-link" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="" class="nav-link" target="_blank">License</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </main>
+    </div>
+</div>

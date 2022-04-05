@@ -1,0 +1,30 @@
+<div class="container">
+    <form [formGroup]="form"  (ngSubmit) = 'addpost()'>
+        <div class="form-group mt-3">
+            <label for="title">文章標題</label>
+            <input type="text" class="form-control w-75" id="title" formControlName='title' placeholder="標題">
+        </div>
+        <br>
+        <mat-label class="label">分類標簽</mat-label>
+        <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="radio-group"
+        formControlName="cat"
+        [(ngModel)]="CategorySelected">
+        <mat-radio-button class="radio-button ml-4" *ngFor="let category of categories" [value]="category.name">
+            {{category.name}}
+        </mat-radio-button>
+        </mat-radio-group>
+        <br>
+        <br>
+        <div id="angular-editor">
+            <angular-editor formControlName="content" [config]="config"></angular-editor>
+        </div>
+        <div class="mt-4">
+            <button class="submit-button" mat-raised-button color="primary" type ='submit' [disabled] = '!this.form.valid'>
+                新增文章
+            </button>
+        </div>
+    </form>
+</div>
+

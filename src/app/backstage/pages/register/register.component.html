@@ -1,0 +1,42 @@
+<section class="login-bg">
+    <!-- <img src="../../../assets/logo.png" class="login-logo"> -->
+    <div>
+        <form [formGroup] = 'form' (ngSubmit) = 'register()' id="form" class="mt-4">
+            
+            <label class="login-label2">注冊</label>
+            <div class="fontui mb-2">
+              <input type = 'text' placeholder="用戶名" formControlName = 'username' class="placeholding-input"/>
+              <i class="fa fa-user fa-lg"></i>
+            </div>
+            
+            <div class="fontui mb-2">
+                <input type = 'password' placeholder="密碼" formControlName = 'password' class="placeholding-input"/>
+                <i class="fa fa-lock fa-lg"></i>
+            </div>
+
+            <!-- <div class="fontui mb-2">
+                
+                <input type = 'text' placeholder="領英（非必填）" formControlName = 'linkedin' class="placeholding-input"/>
+                <i class="fa fa-link fa-lg"></i>
+            </div>
+
+            <div class="fontui mb-2">
+                
+                <input type = 'text' placeholder="碼雲（非必填）" formControlName = 'gitee' class="placeholding-input"/>
+                <i class="fa fa-link fa-lg"></i>
+            </div>
+
+            <div class="fontui mb-2">
+                
+                <input type = 'text' placeholder="抖音（非必填）" formControlName = 'tiktok' class="placeholding-input"/>
+                <i class="fa fa-link fa-lg"></i>
+            </div> -->
+            
+            <div class="login-button-row">
+                <button mat-raised-button color="primary" type ='submit' [disabled] = '!this.form.valid' class="login-button">
+                    注冊
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

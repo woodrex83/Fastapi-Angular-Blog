@@ -1,0 +1,26 @@
+<section class="login-bg">
+    <!-- <img src="../../../assets/logo.png" class="login-logo"> -->
+    <div>
+        <form [formGroup] = 'form' (ngSubmit) = 'login()' id="form" class="mt-4">
+            
+            <label class="login-label2">後台管理系統</label>
+            <div class="fontui mb-4">
+              
+              <input type = 'text' placeholder="用戶名" formControlName = 'username' class="placeholding-input"/>
+              <i class="fa fa-user fa-lg"></i>
+            </div>
+            
+            <div class="fontui mb-4">
+                
+                <input type = 'password' placeholder="密碼" formControlName = 'password' class="placeholding-input"/>
+                <i class="fa fa-lock fa-lg"></i>
+            </div>
+            
+            <div class="login-button-row">
+                <button mat-raised-button color="primary" type ='submit' [disabled] = '!this.form.valid' class="login-button">
+                    登錄
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

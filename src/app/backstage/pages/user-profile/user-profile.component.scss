@@ -1,0 +1,30 @@
+.upper-part-bg {
+    height: 35vh;
+}
+
+// .h-65 {
+//     height: 65% !important;
+// }
+
+.mt--10 {
+    margin-top: -13rem!important;
+}
+
+
+.border-style {
+    background-color: #172b4d;
+    // border: 1px solid rgba(0,0,0,.05) !important;
+    border: 0px solid !important;
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #1c345d;
+    color: #fff;
+}
+
+.card-body,.bg-secondary {
+    background-color: #172b4d !important;
+    color: #fff
+}

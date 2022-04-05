@@ -1,0 +1,33 @@
+.blog-post {
+    overflow: hidden;
+    margin-bottom: 4em;
+}
+
+.post-headline {
+    font-size: 25px;
+    font-size: 1.78571rem;
+    font-weight: 500;
+}
+
+.post-meta {
+    font-size: 13px;
+    margin: 2em 0 3em;
+    color: #999;
+}
+
+.post-meta-pipe {
+    margin: 0 1em;
+}
+
+hr {
+    margin: 2em 0;
+    margin-top: 2em;
+    margin-right: 0px;
+    margin-bottom: 2em;
+    margin-left: 0px;
+    border-top-color: 1px solid #eee;
+}
+
+a {
+    text-decoration: none;
+}

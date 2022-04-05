@@ -1,0 +1,58 @@
+<div class="bg-primary-danger upper-part-bg">
+
+</div>
+<div  class="col-xl-10 order-xl-1 container mt--10">
+    <form class="ng-untouched ng-pristine ng-valid border-style" [formGroup]="form">
+        <div  class="card bg-secondary shadow">
+            <div  class="card-header">
+                <div  class="row align-items-center">
+                    <div  class="col-8">
+                        <h3 class="mb-0">用戶資料</h3>
+                    </div>
+                    <div  class="col-4 text-right">
+                        <a  class="btn btn-sm btn-primary" (ngSubmit) = 'modifyUser()'>確認修改</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div  class="pl-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div  class="form-group">
+                                <label  class="form-control-label" for="input-username">LinkedIn</label>
+                                <input  class="form-control form-control-alternative" type="text" value="{{linkedin}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <div class="col-lg-12">
+                            <div  class="form-group">
+                                <label  class="form-control-label" for="input-email">Gitee</label>
+                                <input  class="form-control form-control-alternative" type="email" value="{{gitee}}">
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="row">
+                        <div class="col-lg-12">
+                            <div  class="form-group">
+                                <label  class="form-control-label" for="input-email">Tiktok</label>
+                                <input  class="form-control form-control-alternative" type="email" value="{{tiktok}}">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="form-control-label">關於我</label>
+                                <textarea class="form-control form-control-alternative" rows="8"></textarea>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>         
+    </form>
+</div>

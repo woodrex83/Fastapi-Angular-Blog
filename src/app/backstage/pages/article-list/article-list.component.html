@@ -1,0 +1,49 @@
+<!-- <table>
+    <tr *ngFor="let p of postList;">
+      <td>{{p.created_at}}</td>
+      <td (click)="inPost(p.id)">{{p.title}}</td>
+    </tr>
+</table> -->
+<div class="bg-primary-danger upper-part-bg">
+
+</div>
+<div id="body" class="h-77">
+    <mat-table class="ml-8" [dataSource]="postList" matSort>
+      <ng-container matColumnDef="user">
+        <mat-header-cell *matHeaderCellDef>ID</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.id }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="title">
+        <mat-header-cell *matHeaderCellDef>標題</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.title }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="created_at">
+        <mat-header-cell *matHeaderCellDef>日期</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{ row.created_at | date:'medium':'UTC+16' }}</mat-cell>
+      </ng-container>
+    
+      <ng-container matColumnDef="management">
+        <mat-header-cell *matHeaderCellDef>
+          管理
+        </mat-header-cell>
+        <mat-cell *matCellDef="let row">
+          <button mat-raised-button color="primary" (click)="inPost(row.id)">修改</button>
+          <button mat-button color="warn" (click)="delPost(row.id)">刪除</button>
+        </mat-cell>
+      </ng-container>
+      
+      <mat-header-row *matHeaderRowDef="['user', 'title', 'created_at', 'management']"></mat-header-row>
+      <mat-row *matRowDef="let articleRow; columns: ['user', 'title', 'created_at', 'management']"></mat-row>
+    </mat-table>
+
+    <mat-paginator #paginator 
+                 [length]="totalCount" 
+                 [pageIndex]="0" 
+                 [pageSize]="10"
+                 [pageSizeOptions]="[1, 5, 10]">
+    </mat-paginator>
+  </div>
+  
+  

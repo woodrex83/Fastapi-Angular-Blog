@@ -1,0 +1,53 @@
+.upper-part-bg {
+    height: 35vh;
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+    color: #fff;
+    background-color: #aaa;
+    border-color: #aaa;
+}
+
+.ml-10 {
+    margin-left: 5vw;
+    width: 300px;
+}
+
+.btn {
+    margin-left: 50px;
+    height: 70%;
+}
+
+// Table
+
+.h-65 {
+    height: 65% !important;
+}
+
+.mt--10 {
+    margin-top: -13rem!important;
+}
+
+th {
+    font-weight: 400;
+}
+
+th.mat-header-cell {
+    background-color: #1c345d;
+    color: #fff;
+}
+
+td.mat-cell {
+    color: #fff;
+}
+
+.mat-elevation-z8 {
+    width: 90%;
+    background-color: #172b4d;
+    border: 1px solid rgba(0,0,0,.05);
+    box-shadow: 0 0 2rem 0 rgba(136,152,170,.15)!important;
+    margin-top: 100px;
+    margin-left: 5vw;
+    border-radius: 8px;
+    overflow:hidden !important;
+}

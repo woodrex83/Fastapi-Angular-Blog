@@ -1,0 +1,56 @@
+.fill-default {
+    background-image: linear-gradient(to right, #373b44, #4286f4);
+}
+
+.container-h {
+    height: 10vh;
+}
+
+svg {
+    color: #32325d;
+}
+
+.h1, h1 {
+    font-size: 1.625rem;
+}
+
+.text-light {
+    color: #ced4da!important;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.footer {
+    background-color: #32325d;
+    height: 15vh;
+}
+
+.copyright {
+    color: #fff;
+}
+
+.trademark {
+    color:#4286f4
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-3 {
+        max-width: 50%;
+        flex: 0 0 50%;
+        text-align: center;
+    }
+}
+
+.mb-5 {
+    margin-bottom: 7.5rem!important;
+}
+

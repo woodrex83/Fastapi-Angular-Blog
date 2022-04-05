@@ -1,0 +1,14 @@
+<div id="body" class="h-100">
+    <div class="blog-post">
+        <ng-container *ngFor="let p of article">
+            <h2 class="post-headline">{{p.title}}</h2>
+            <div class="post-meta">
+                Posted on {{p.created_at | date: 'MMMM dd,yyyy'}}
+                <span class="post-meta-pipe">|</span>
+                {{p.categoryName}}
+            </div>
+            <span class="content" [innerHTML]="p.content"></span>
+            <hr>
+        </ng-container>
+    </div>
+</div>
