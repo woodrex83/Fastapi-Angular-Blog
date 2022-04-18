@@ -26,9 +26,10 @@ Python后端簡約开源博客
 * Angular CLI: 13.x
 
 ## 下載
+
 ```shell
 git clone https://gitee.com/Woodrex/fastapi-angular-blog.git
-
+```
 
 ### 安裝
 *後端*
