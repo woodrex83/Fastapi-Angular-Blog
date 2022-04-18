@@ -36,6 +36,7 @@ git clone https://gitee.com/Woodrex/fastapi-angular-blog.git
 1: 安装Python 3.8.x，打開虛擬環境（默認使用venv）
 2：或進入backend目錄，pip install -r ./requirements.txt
 ```
+
 *前端*
 ```
 1: 安装Node版本 16.13.0 和 angular-cli
@@ -50,6 +51,7 @@ git clone https://gitee.com/Woodrex/fastapi-angular-blog.git
 2: backend\venv\scripts\activate.bat # 打開虛擬環境
 3: uvicorn backend.main:app --port 8003
 ```
+
 *前端*
 ```
 1: cd fastapi-angular-blog
@@ -60,7 +62,6 @@ git clone https://gitee.com/Woodrex/fastapi-angular-blog.git
 ```
 
 ## 預覽
-
-![avatar](./pic/Main.png)
-![avatar](./pic/control.png)
+![avatar](pic/Main.PNG)
+![avatar](./pic/control.PNG)
 
