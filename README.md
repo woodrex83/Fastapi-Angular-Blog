@@ -1,6 +1,6 @@
 # fastapi-angular-blog
 
-> Chinese version ![Here](https://github.com/WoodRex/fastapi-angular-blog/blob/master/README_CN.md)
+> Chinese version [Here](https://github.com/WoodRex/fastapi-angular-blog/blob/master/README_CN.md)
 
 [![](https://img.shields.io/badge/Python-3.8-blue.svg)](https://www.python.org/downloads)
 [![](https://img.shields.io/badge/FastAPI-0.74.1-ff69b4.svg)](https://fastapi.tiangolo.com/)
